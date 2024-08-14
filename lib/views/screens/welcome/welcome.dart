@@ -1,9 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 import 'package:laundry_service_app/utils/const/images.dart';
 import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_button.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
+import 'package:laundry_service_app/views/screens/login/login.dart';
 import 'package:laundry_service_app/views/screens/welcome/widget/continue_with_google_button.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -83,7 +85,7 @@ class _WelcomePageState extends State<WelcomePage> {
               const SizedBox(
                 height: 70,
               ),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   CustomButtonWidget(
@@ -93,6 +95,10 @@ class _WelcomePageState extends State<WelcomePage> {
                     btnNameSize: 20,
                     btnNameColor: CommonColor.white,
                     bgColor: CommonColor.blue,
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const LoginPage()));
+                    },
                   ),
                   CustomButtonWidget(
                     height: 50,
@@ -100,6 +106,8 @@ class _WelcomePageState extends State<WelcomePage> {
                     buttonName: CommonText.welcomeT7,
                     btnNameSize: 20,
                     btnNameColor: CommonColor.blue,
+                    onPressed: () {
+                    },
                   ),
                 ],
               )

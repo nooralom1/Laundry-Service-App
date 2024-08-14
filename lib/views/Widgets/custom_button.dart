@@ -8,6 +8,7 @@ class CustomButtonWidget extends StatelessWidget {
   final String buttonName;
   final double btnNameSize;
   final Color btnNameColor;
+  final Function() onPressed;
   const CustomButtonWidget({
     super.key,
     required this.height,
@@ -15,7 +16,7 @@ class CustomButtonWidget extends StatelessWidget {
     this.bgColor,
     required this.buttonName,
     required this.btnNameSize,
-    required this.btnNameColor,
+    required this.btnNameColor, required this.onPressed,
   });
 
   @override
@@ -32,7 +33,9 @@ class CustomButtonWidget extends StatelessWidget {
               borderRadius: BorderRadius.circular(15),
               side: const BorderSide(color: CommonColor.blue, width: 2),
             ))),
-        onPressed: () {},
+        onPressed: () {
+          onPressed;
+        },
         child: Text(
           buttonName,
           style: TextStyle(

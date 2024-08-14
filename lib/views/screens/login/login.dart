@@ -20,81 +20,84 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Column(
-            children: [
-              const SizedBox(
-                height: 10,
-              ),
-              Row(
-                children: [
-                  InkWell(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: const Icon(
-                      Icons.arrow_back,
-                      size: 50,
-                      color: CommonColor.blue,
-                    ),
-                  ),
-                ],
-              ),
-              Image.asset(
-                CommonImage.bbeLogo,
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              const CustomText(),
-              const SizedBox(
-                height: 50,
-              ),
-              const Text(
-                CommonText.loginT1,
-                style: TextStyle(
-                  fontSize: 14,
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 10,
                 ),
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              const CustomTextFormField(
-                prefixIcon: Icons.email_outlined,
-                labelText: 'Email Address',
-                hintText: 'sundaymoseschidozie@gmail.com',
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              const CustomTextFormField(
-                prefixIcon: Icons.lock_outline_sharp,
-                labelText: 'Password',
-                hintText: '**********',
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              const CustomButtonWidget(
-                height: 60,
-                wight: double.maxFinite,
-                buttonName: CommonText.welcomeT6,
-                btnNameSize: 14,
-                btnNameColor: CommonColor.white,
-                bgColor: CommonColor.blue,
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text(
-                    CommonText.loginT2,
-                    style: TextStyle(color: CommonColor.blue, fontSize: 14),
-                  )
-                ],
-              )
-            ],
+                Row(
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Icon(
+                        Icons.arrow_back,
+                        size: 50,
+                        color: CommonColor.blue,
+                      ),
+                    ),
+                  ],
+                ),
+                Image.asset(
+                  CommonImage.bbeLogo,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const CustomText(),
+                const SizedBox(
+                  height: 50,
+                ),
+                const Text(
+                  CommonText.loginT1,
+                  style: TextStyle(
+                    fontSize: 14,
+                  ),
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                const CustomTextFormField(
+                  prefixIcon: Icons.email_outlined,
+                  labelText: 'Email Address',
+                  hintText: 'sundaymoseschidozie@gmail.com',
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                const CustomTextFormField(
+                  prefixIcon: Icons.lock_outline_sharp,
+                  labelText: 'Password',
+                  hintText: '**********',
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                CustomButtonWidget(
+                  height: 60,
+                  wight: double.maxFinite,
+                  buttonName: CommonText.welcomeT6,
+                  btnNameSize: 14,
+                  btnNameColor: CommonColor.white,
+                  bgColor: CommonColor.blue,
+                  onPressed: () {},
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    Text(
+                      CommonText.loginT2,
+                      style: TextStyle(color: CommonColor.blue, fontSize: 14),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
       ),
