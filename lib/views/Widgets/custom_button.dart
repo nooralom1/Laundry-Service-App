@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 
@@ -10,7 +9,13 @@ class CustomButtonWidget extends StatelessWidget {
   final double btnNameSize;
   final Color btnNameColor;
   const CustomButtonWidget({
-    super.key, required this.height, required this.wight, this.bgColor, required this.buttonName, required this.btnNameSize, required this.btnNameColor,
+    super.key,
+    required this.height,
+    required this.wight,
+    this.bgColor,
+    required this.buttonName,
+    required this.btnNameSize,
+    required this.btnNameColor,
   });
 
   @override
@@ -21,14 +26,12 @@ class CustomButtonWidget extends StatelessWidget {
       child: TextButton(
         style: ButtonStyle(
             backgroundColor:
-            WidgetStateProperty.all<Color>(bgColor?? Colors.transparent),
-            shape:
-            WidgetStateProperty.all<RoundedRectangleBorder>(
+                WidgetStateProperty.all<Color>(bgColor ?? Colors.transparent),
+            shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                  side: const BorderSide(
-                      color: CommonColor.blue, width: 2),
-                ))),
+              borderRadius: BorderRadius.circular(15),
+              side: const BorderSide(color: CommonColor.blue, width: 2),
+            ))),
         onPressed: () {},
         child: Text(
           buttonName,

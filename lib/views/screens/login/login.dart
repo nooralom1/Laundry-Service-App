@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Row(
@@ -31,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                    child: Icon(
+                    child: const Icon(
                       Icons.arrow_back,
                       size: 50,
                       color: CommonColor.blue,
@@ -58,7 +58,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 50,
               ),
-              CustomTextFormField(
+              const CustomTextFormField(
                 prefixIcon: Icons.email_outlined,
                 labelText: 'Email Address',
                 hintText: 'sundaymoseschidozie@gmail.com',
@@ -66,7 +66,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 15,
               ),
-              CustomTextFormField(
+              const CustomTextFormField(
                 prefixIcon: Icons.lock_outline_sharp,
                 labelText: 'Password',
                 hintText: '**********',
@@ -74,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 50,
               ),
-              CustomButtonWidget(
+              const CustomButtonWidget(
                 height: 60,
                 wight: double.maxFinite,
                 buttonName: CommonText.welcomeT6,
@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
               const SizedBox(
                 height: 50,
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text(

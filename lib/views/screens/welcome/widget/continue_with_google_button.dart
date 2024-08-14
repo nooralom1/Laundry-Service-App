@@ -20,10 +20,8 @@ class ContinueWithGoogleButton extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     side: const BorderSide()))),
         onPressed: () {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => const GoogleLoginPage()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const GoogleLoginPage()));
         },
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -31,8 +29,10 @@ class ContinueWithGoogleButton extends StatelessWidget {
             Image.asset(CommonLogo.google),
             const Text(
               CommonText.welcomeT4,
-              style: TextStyle(color: CommonColor.blue,
-                fontSize: 14,),
+              style: TextStyle(
+                color: CommonColor.blue,
+                fontSize: 14,
+              ),
             ),
           ],
         ),

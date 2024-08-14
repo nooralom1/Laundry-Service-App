@@ -4,7 +4,6 @@ import 'package:laundry_service_app/utils/const/images.dart';
 import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_button.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
-import 'package:laundry_service_app/views/screens/google_login/google_login.dart';
 import 'package:laundry_service_app/views/screens/welcome/widget/continue_with_google_button.dart';
 
 class WelcomePage extends StatefulWidget {
