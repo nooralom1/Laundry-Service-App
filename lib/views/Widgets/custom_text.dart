@@ -1,19 +1,14 @@
 import 'package:flutter/cupertino.dart';
+import 'package:laundry_service_app/utils/const/text.dart';
 
 class CustomText extends StatelessWidget {
-  final String text;
-  final Color? textColor;
-  final double? textSize;
-  final FontWeight? textWight;
-  const CustomText({
-    super.key, required this.text, this.textColor, this.textSize, this.textWight,
-  });
+  const CustomText();
 
   @override
   Widget build(BuildContext context) {
     return  Text(
-      text,
-      style: TextStyle(color: textColor, fontSize: textSize,fontWeight: textWight),
+      CommonText.customText,
+      style: TextStyle(fontSize: 14,fontWeight: FontWeight.w600),
     );
   }
 }
