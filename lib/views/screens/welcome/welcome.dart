@@ -4,6 +4,7 @@ import 'package:laundry_service_app/utils/const/images.dart';
 import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_button.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
+import 'package:laundry_service_app/views/screens/google_login/google_login.dart';
 import 'package:laundry_service_app/views/screens/welcome/widget/continue_with_google_button.dart';
 
 class WelcomePage extends StatefulWidget {
@@ -31,18 +32,15 @@ class _WelcomePageState extends State<WelcomePage> {
               const SizedBox(
                 height: 30,
               ),
-              const CustomText(
-                text:  CommonText.welcomeT1,
-               textColor: CommonColor.black,
-                    textWight: FontWeight.w600,
-                    textSize: 14,
-              ),
+              const CustomText(),
               const SizedBox(
                 height: 50,
               ),
-              const CustomText(
-                text:CommonText.welcomeT2,
-                textSize: 14,
+              const Text(
+                CommonText.welcomeT1,
+                style: TextStyle(
+                  fontSize: 14,
+                ),
               ),
               const SizedBox(
                 height: 50,
@@ -50,18 +48,22 @@ class _WelcomePageState extends State<WelcomePage> {
               const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomText(
-                    text: CommonText.welcomeT3,
-                    textColor: CommonColor.blue,
-                    textSize: 14,
+                  Text(
+                    CommonText.welcomeT2,
+                    style: TextStyle(
+                      color: CommonColor.blue,
+                      fontSize: 14,
+                    ),
                   ),
                   SizedBox(
                     height: 20,
                   ),
-                  CustomText(
-                    text: CommonText.welcomeT4,
-                    textColor: CommonColor.blue,
-                    textSize: 14,
+                  Text(
+                    CommonText.welcomeT3,
+                    style: TextStyle(
+                      color: CommonColor.blue,
+                      fontSize: 14,
+                    ),
                   ),
                 ],
               ),
@@ -72,10 +74,12 @@ class _WelcomePageState extends State<WelcomePage> {
               const SizedBox(
                 height: 50,
               ),
-              const CustomText(
-                text: CommonText.welcomeT6,
-                textColor: CommonColor.blue,
-                textSize: 14,
+              const Text(
+                CommonText.welcomeT5,
+                style: TextStyle(
+                  color: CommonColor.blue,
+                  fontSize: 14,
+                ),
               ),
               const SizedBox(
                 height: 70,
@@ -86,7 +90,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   CustomButtonWidget(
                     height: 50,
                     wight: 150,
-                    buttonName: 'LOGIN',
+                    buttonName: CommonText.welcomeT6,
                     btnNameSize: 20,
                     btnNameColor: CommonColor.white,
                     bgColor: CommonColor.blue,
@@ -94,7 +98,7 @@ class _WelcomePageState extends State<WelcomePage> {
                   CustomButtonWidget(
                     height: 50,
                     wight: 150,
-                    buttonName: 'SIGN UP',
+                    buttonName: CommonText.welcomeT7,
                     btnNameSize: 20,
                     btnNameColor: CommonColor.blue,
                   ),

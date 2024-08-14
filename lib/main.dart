@@ -1,5 +1,7 @@
 
 import 'package:flutter/material.dart';
+import 'package:laundry_service_app/views/screens/google_login/google_login.dart';
+import 'package:laundry_service_app/views/screens/login/login.dart';
 import 'package:laundry_service_app/views/screens/welcome/welcome.dart';
 
 void main(){
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomePage(),
+      home: LoginPage(),
     );
   }
 }
