@@ -3,7 +3,7 @@ import 'package:laundry_service_app/utils/const/color.dart';
 import 'package:laundry_service_app/utils/const/images.dart';
 import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
-import 'package:laundry_service_app/views/screens/google_login/widget/custom_listtile.dart';
+import 'package:laundry_service_app/views/screens/auth/google_login/widget/custom_listtile.dart';
 
 class GoogleLoginPage extends StatefulWidget {
   const GoogleLoginPage({super.key});
@@ -21,6 +21,23 @@ class _GoogleLoginPageState extends State<GoogleLoginPage> {
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Column(
             children: [
+              const SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(
+                      Icons.arrow_back,
+                      size: 50,
+                      color: CommonColor.blue,
+                    ),
+                  ),
+                ],
+              ),
               const SizedBox(
                 height: 30,
               ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 import 'package:laundry_service_app/utils/const/logo.dart';
 import 'package:laundry_service_app/utils/const/text.dart';
-import 'package:laundry_service_app/views/screens/google_login/google_login.dart';
+import 'package:laundry_service_app/views/screens/auth/google_login/google_login.dart';
 
 class ContinueWithGoogleButton extends StatelessWidget {
   const ContinueWithGoogleButton({
@@ -28,7 +28,7 @@ class ContinueWithGoogleButton extends StatelessWidget {
           children: [
             Image.asset(CommonLogo.google),
             const Text(
-              CommonText.welcomeT4,
+              CommonText.welcomeT2,
               style: TextStyle(
                 color: CommonColor.blue,
                 fontSize: 14,
