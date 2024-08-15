@@ -1,4 +1,6 @@
 
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 import 'package:laundry_service_app/utils/const/images.dart';
@@ -98,6 +100,7 @@ class _WelcomePageState extends State<WelcomePage> {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => const LoginPage()));
+                      log("message");
                     },
                   ),
                   CustomButtonWidget(
