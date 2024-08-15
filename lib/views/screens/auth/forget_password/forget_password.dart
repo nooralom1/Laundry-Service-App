@@ -5,15 +5,16 @@ import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_button.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_textformfield.dart';
+import 'package:laundry_service_app/views/screens/auth/verification/verification.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+class ForgetPasswordPage extends StatefulWidget {
+  const ForgetPasswordPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<ForgetPasswordPage> createState() => _ForgetPasswordPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _ForgetPasswordPageState extends State<ForgetPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,6 +41,9 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ],
                 ),
+                const SizedBox(
+                  height: 100,
+                ),
                 Image.asset(
                   CommonImage.bbeLogo,
                 ),
@@ -51,13 +55,13 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50,
                 ),
                 const Text(
-                  CommonText.loginT1,
+                  CommonText.forgetPassT,
                   style: TextStyle(
                     fontSize: 14,
                   ),
                 ),
                 const SizedBox(
-                  height: 50,
+                  height: 80,
                 ),
                 const CustomTextFormField(
                   prefixIcon: Icons.email_outlined,
@@ -65,37 +69,22 @@ class _LoginPageState extends State<LoginPage> {
                   hintText: 'sundaymoseschidozie@gmail.com',
                 ),
                 const SizedBox(
-                  height: 15,
-                ),
-                const CustomTextFormField(
-                  prefixIcon: Icons.lock_outline_sharp,
-                  labelText: 'Password',
-                  hintText: '**********',
-                ),
-                const SizedBox(
-                  height: 50,
+                  height: 20,
                 ),
                 CustomButtonWidget(
                   height: 60,
                   wight: double.maxFinite,
-                  buttonName: CommonText.welcomeT6,
+                  buttonName: CommonText.continue_,
                   btnNameSize: 14,
                   btnNameColor: CommonColor.white,
                   bgColor: CommonColor.blue,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const VerificationPage()));
+                  },
                 ),
-                const SizedBox(
-                  height: 50,
-                ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text(
-                      CommonText.loginT2,
-                      style: TextStyle(color: CommonColor.blue, fontSize: 14),
-                    )
-                  ],
-                )
               ],
             ),
           ),
