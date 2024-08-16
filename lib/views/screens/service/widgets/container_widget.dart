@@ -35,7 +35,7 @@ class ContainerWidget extends StatelessWidget {
             height: 20,
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30),
+            padding: EdgeInsets.symmetric(horizontal: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -44,19 +44,19 @@ class ContainerWidget extends StatelessWidget {
                   children: [
                     Text(
                       "* Folding and Packaging",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Alteration and repair",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Commercial service",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Rug and carpet cleaning",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                   ],
                 ),
@@ -65,19 +65,19 @@ class ContainerWidget extends StatelessWidget {
                   children: [
                     Text(
                       "* Stain removal",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Pick up and delivery",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Home service",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                     Text(
                       "* Online tracking and payment",
-                      style: TextStyle(fontSize: 12),
+                      style: TextStyle(fontSize: 14),
                     ),
                   ],
                 ),
