@@ -62,70 +62,71 @@ class _PricePageState extends State<PricePage> {
                     const SizedBox(
                       height: 10,
                     ),
-                    Row(
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              priceData[index].p1 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p2 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p3 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p4 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p5 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p6 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          width: 20,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              priceData[index].p7 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p8 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p9 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p10 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p11 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                            Text(
-                              priceData[index].p12 ?? "",
-                              style: const TextStyle(fontSize: 12),
-                            ),
-                          ],
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.only(right: 30,left: 5),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                priceData[index].p1 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p2 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p3 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p4 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p5 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p6 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                priceData[index].p7 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p8 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p9 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p10 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p11 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                              Text(
+                                priceData[index].p12 ?? "",
+                                style: const TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     )
                   ],
                 ),
