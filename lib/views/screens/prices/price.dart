@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:laundry_service_app/models/price.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 
 class PricePage extends StatefulWidget {
@@ -33,7 +34,7 @@ class _PricePageState extends State<PricePage> {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: ListView.builder(
-              itemCount: 10,
+              itemCount: priceData.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
@@ -43,11 +44,11 @@ class _PricePageState extends State<PricePage> {
                     child: Column(
                       children: [
                         const SizedBox(height: 5,),
-                        const Text("Wears",style: TextStyle(
+                         Text(priceData[index].name,style: const TextStyle(
                             fontSize: 16, fontWeight: FontWeight.w600),),
                         const SizedBox(height: 10,),
                         Image.asset(
-                          "assets/images/Rectangle 14.png",
+                          priceData[index].imagePath,
                           height: 150,
                           width: 221,
                           fit: BoxFit.fill,
@@ -55,73 +56,73 @@ class _PricePageState extends State<PricePage> {
                         const SizedBox(
                           height: 10,
                         ),
-                        const Row(
+                         Row(
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "* T-shirt on hanger  #2,500",
-                                  style: TextStyle(
+                                  priceData[index].p1??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* 2-piece suit  #3,500",
-                                  style: TextStyle(
+                                  priceData[index].p2??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* Short  #2,000",
-                                  style: TextStyle(
+                                  priceData[index].p3??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* Dress  #2,500",
-                                  style: TextStyle(
+                                  priceData[index].p4??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* Jeans  #2,500",
-                                  style: TextStyle(
+                                  priceData[index].p5??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* Native wear  #2,500",
-                                  style: TextStyle(
+                                  priceData[index].p6??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                               ],
                             ),
-                            SizedBox(width: 20,),
+                            const SizedBox(width: 20,),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "* T-shirt folded  #3,000",
-                                  style: TextStyle(
+                                  priceData[index].p7??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
                                 Text(
-                                  "* 3-piece suit  #4,000",
-                                  style: TextStyle(
+                                  priceData[index].p8??"",
+                                  style: const TextStyle(
                                       fontSize: 12),
                                 ),
-                                Text(
+                                const Text(
                                   "* Pyjamas  #2,500",
                                   style: TextStyle(
                                       fontSize: 12),
                                 ),
-                                Text(
+                                const Text(
                                   "* Single top  #3,000",
                                   style: TextStyle(
                                       fontSize: 12),
                                 ),
-                                Text(
+                                const Text(
                                   "* Complete agbada  #3,000",
                                   style: TextStyle(
                                       fontSize: 12),
                                 ),
-                                Text(
+                                const Text(
                                   "* Lace wears  #3,000",
                                   style: TextStyle(
                                       fontSize: 12),
