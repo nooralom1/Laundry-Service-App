@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:laundry_service_app/models/Service.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 
 class ServicePage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _ServicePageState extends State<ServicePage> {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: ListView.builder(
-              itemCount: 10,
+              itemCount: serviceData.length,
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
@@ -42,7 +43,7 @@ class _ServicePageState extends State<ServicePage> {
                     child: Row(
                       children: [
                         Image.asset(
-                          "assets/images/Rectangle 14.png",
+                          serviceData[index].imagePath,
                           height: 150,
                           width: 114,
                           fit: BoxFit.fill,
@@ -50,27 +51,27 @@ class _ServicePageState extends State<ServicePage> {
                         const SizedBox(
                           width: 20,
                         ),
-                        const Column(
+                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "Laundry Service",
-                              style: TextStyle(
+                              serviceData[index].serviceName,
+                              style: const TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.w600),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
                             Text(
-                              "This is regular laundry, items are\nwashed, tumble dried and neatly\nfolded garments. All order will be\ncharged based on weight",
-                              style: TextStyle(
+                              serviceData[index].serviceDetails,
+                              style: const TextStyle(
                                   fontSize: 13,),
                             ),
-                            SizedBox(height: 15,),
+                            const SizedBox(height: 15,),
                             Row(
                               children: [
-                                Text("Check prices",style: TextStyle(color: CommonColor.blue),),
-                                Icon(Icons.chevron_right,color: CommonColor.blue,)
+                                Text(serviceData[index].serviceCharge,style: const TextStyle(color: CommonColor.blue),),
+                                Icon(serviceData[index].rightArrow,color: CommonColor.blue,)
                               ],
                             ),
                           ],
