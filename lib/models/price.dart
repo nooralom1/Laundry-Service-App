@@ -62,11 +62,11 @@ List<PriceModel> priceData = [
   PriceModel(
     name: "Commercial ",
     imagePath: "assets/images/Rectangle 22.png",
-    p1: "Coveralls  #2,500",
-    p2: "2-piece suit  #3,500",
-    p3: "Short  #2,000",
-    p7: "Hotel Bedshits  #3,000",
-    p8: "3-piece suit  #4,000",
-    p9: "Pyjamas  #2,500",
+    p1: "* Coveralls  #2,500",
+    p2: "* 2-piece suit  #3,500",
+    p3: "* Short  #2,000",
+    p7: "* Hotel Bedshits  #3,000",
+    p8: "* 3-piece suit  #4,000",
+    p9: "* Pyjamas  #2,500",
   ),
 ];
