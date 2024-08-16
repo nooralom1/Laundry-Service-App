@@ -14,7 +14,7 @@ class BottomNavigationPage extends StatefulWidget {
 }
 
 class _BottomNavigationPageState extends State<BottomNavigationPage> {
-  int selectedIndex = 0;
+  int selectedIndex = 1;
   late final List<Widget> page;
 
   @override
