@@ -29,8 +29,30 @@ class PriceModel {
       this.p11,
       this.p12});
 }
+
 List<PriceModel> priceData = [
-  PriceModel(name: "Wears", imagePath: "assets/images/Rectangle 14.png"),
-  PriceModel(name: "Home & Bedding", imagePath: "assets/images/Rectangle 16.1.png"),
-  PriceModel(name: "Commercial ", imagePath: "assets/images/Rectangle 22.png"),
+  PriceModel(
+    name: "Wears",
+    imagePath: "assets/images/Rectangle 14.png",
+    p1: "T-shirt on hanger  #2,500",
+    p2: "2-piece suit  #3,500",
+    p3: "Short  #2,000",
+    p4: "Dress  #2,500",
+    p5: "Jeans  #2,500",
+    p6: "Native wear  #2,500",
+    p7: "T-shirt folded  #3,000",
+    p8: "3-piece suit  #4,000",
+    p9: "Pyjamas  #2,500",
+    p10: "Single top  #3,000",
+    p11: "Complete agbada  #3,000",
+    p12: "Lace wears  #3,000",
+  ),
+  PriceModel(
+    name: "Home & Bedding",
+    imagePath: "assets/images/Rectangle 16.1.png",
+  ),
+  PriceModel(
+    name: "Commercial ",
+    imagePath: "assets/images/Rectangle 22.png",
+  ),
 ];
