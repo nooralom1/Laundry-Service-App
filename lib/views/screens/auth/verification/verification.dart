@@ -5,7 +5,6 @@ import 'package:laundry_service_app/utils/const/text.dart';
 import 'package:laundry_service_app/views/Widgets/custom_button.dart';
 import 'package:laundry_service_app/views/Widgets/custom_text.dart';
 import 'package:laundry_service_app/views/screens/auth/creat_new_pass/creat_new_pass.dart';
-import 'package:otp_pin_field/otp_pin_field.dart';
 
 class VerificationPage extends StatefulWidget {
   const VerificationPage({super.key});
