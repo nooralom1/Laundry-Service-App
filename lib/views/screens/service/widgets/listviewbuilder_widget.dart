@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
-import 'package:laundry_service_app/models/Service.dart';
+import 'package:laundry_service_app/database/service.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 
 class ListViewBuilderWidget extends StatelessWidget {
