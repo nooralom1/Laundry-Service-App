@@ -1,3 +1,4 @@
+
 import 'package:laundry_service_app/models/price.dart';
 
 List<PriceModel> priceData = [
