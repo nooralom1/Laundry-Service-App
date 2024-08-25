@@ -19,9 +19,10 @@ class _SplashPageState extends State<SplashPage> {
     super.initState();
     Timer(
         const Duration(seconds: 3),
-            () => Navigator.of(context).pushReplacement(MaterialPageRoute(
+        () => Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) => const WelcomePage())));
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +32,9 @@ class _SplashPageState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(CommonImage.bbeLogo),
-            const SizedBox(height: 30,),
+            const SizedBox(
+              height: 30,
+            ),
             const CustomText()
           ],
         ),
