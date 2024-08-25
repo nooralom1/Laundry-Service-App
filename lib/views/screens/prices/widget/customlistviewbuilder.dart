@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:laundry_service_app/database/price.dart';
-import 'package:laundry_service_app/models/price.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 
 class CustomListViewBuilderWidget extends StatelessWidget {
