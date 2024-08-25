@@ -1,3 +1,4 @@
+
 class PriceModel {
   final String name;
   final String imagePath;
