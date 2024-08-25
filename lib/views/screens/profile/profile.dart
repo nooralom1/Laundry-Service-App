@@ -47,12 +47,16 @@ class _ProfilePageState extends State<ProfilePage> {
                         "assets/logos/profile_logo-removebg-preview.png")),
               ),
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
             const Text(
               "Change profile Photo",
               style: TextStyle(fontSize: 20, color: CommonColor.blue),
             ),
-            const SizedBox(height: 50,),
+            const SizedBox(
+              height: 50,
+            ),
             Expanded(
               child: ListView.builder(
                 itemCount: userDetails.length,
@@ -71,7 +75,8 @@ class _ProfilePageState extends State<ProfilePage> {
                           children: [
                             Text(
                               userDetails[index],
-                              style: const TextStyle(fontSize: 20,color: CommonColor.white),
+                              style: const TextStyle(
+                                  fontSize: 20, color: CommonColor.white),
                             ),
                           ],
                         ),
