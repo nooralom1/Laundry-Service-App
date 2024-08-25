@@ -56,10 +56,7 @@ class _CreatNewPassPageState extends State<CreatNewPassPage> {
                 ),
                 const Text(
                   CommonText.creatNewPassT1,
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w700
-                  ),
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
                 ),
                 const SizedBox(
                   height: 50,
@@ -67,10 +64,15 @@ class _CreatNewPassPageState extends State<CreatNewPassPage> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(CommonText.creatNewPassT1,style: TextStyle(fontSize: 16),),
+                    Text(
+                      CommonText.creatNewPassT1,
+                      style: TextStyle(fontSize: 16),
+                    ),
                   ],
                 ),
-                const SizedBox(height: 5,),
+                const SizedBox(
+                  height: 5,
+                ),
                 const CustomTextFormField(
                   prefixIcon: Icons.lock_outline_sharp,
                   labelText: 'Password (8 to 32)',
@@ -82,10 +84,15 @@ class _CreatNewPassPageState extends State<CreatNewPassPage> {
                 const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(CommonText.creatNewPassT2,style: TextStyle(fontSize: 16),),
+                    Text(
+                      CommonText.creatNewPassT2,
+                      style: TextStyle(fontSize: 16),
+                    ),
                   ],
                 ),
-                const SizedBox(height: 5,),
+                const SizedBox(
+                  height: 5,
+                ),
                 const CustomTextFormField(
                   prefixIcon: Icons.lock_outline_sharp,
                   labelText: 'Password (8 to 32)',
@@ -102,7 +109,10 @@ class _CreatNewPassPageState extends State<CreatNewPassPage> {
                   btnNameColor: CommonColor.white,
                   bgColor: CommonColor.blue,
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const LoginPage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const LoginPage()));
                   },
                 ),
               ],
