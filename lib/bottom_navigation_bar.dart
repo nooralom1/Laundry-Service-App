@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
 import 'package:laundry_service_app/views/screens/home/home.dart';
@@ -46,12 +45,14 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home_outlined), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home_outlined), label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(Icons.local_laundry_service), label: "Services"),
           BottomNavigationBarItem(
               icon: Icon(Icons.attach_money_sharp), label: "Prices"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_outlined), label: "Profile"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person_outlined), label: "Profile"),
         ],
       ),
       body: page[selectedIndex],
