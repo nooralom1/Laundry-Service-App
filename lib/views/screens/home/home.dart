@@ -56,8 +56,10 @@ class _HomePageState extends State<HomePage> {
                   btnNameColor: CommonColor.blue,
                   bgColor: CommonColor.white,
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const ServicePage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const ServicePage()));
                   },
                 ),
                 CustomButtonWidget(
@@ -68,8 +70,10 @@ class _HomePageState extends State<HomePage> {
                   btnNameColor: CommonColor.blue,
                   bgColor: CommonColor.white,
                   onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const PricePage()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const PricePage()));
                   },
                 ),
               ],
