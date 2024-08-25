@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:laundry_service_app/database/service.dart';
 import 'package:laundry_service_app/utils/const/color.dart';
@@ -16,9 +15,7 @@ class ListViewBuilderWidget extends StatelessWidget {
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 10),
           child: InkWell(
-            onTap: (){
-
-            },
+            onTap: () {},
             child: Container(
               height: 150,
               color: CommonColor.white,
@@ -57,8 +54,7 @@ class ListViewBuilderWidget extends StatelessWidget {
                         children: [
                           Text(
                             serviceData[index].serviceCharge,
-                            style: const TextStyle(
-                                color: CommonColor.blue),
+                            style: const TextStyle(color: CommonColor.blue),
                           ),
                           Icon(
                             serviceData[index].rightArrow,
